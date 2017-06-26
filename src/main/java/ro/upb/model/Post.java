@@ -5,10 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-/**
- * Created by radug on 6/25/2017.
- */
-
 @Entity
 public class Post {
     @Id //in aceasta data va fi salvat id-ul
@@ -23,12 +19,15 @@ public class Post {
 
     //TODO: cometarii
 
+    private Boolean featured;
+
     public Post() {
     }
 
-    public Post(String title, String content) {
+    public Post(String title, String content, Boolean featured) {
         this.title = title;
         this.content = content;
+        this.featured = featured;
     }
 
     public Long getId() {
@@ -53,5 +52,13 @@ public class Post {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Boolean getFeatured() {
+        return featured;
+    }
+
+    public void setFeatured(Boolean featured) {
+        this.featured = featured;
     }
 }

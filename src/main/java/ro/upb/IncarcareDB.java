@@ -18,12 +18,12 @@ public class IncarcareDB implements ApplicationRunner {
     PostRepository postRepository;
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
-        postRepository.save(new Post("Test1", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
-        postRepository.save(new Post("Test2", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
-        postRepository.save(new Post("Test3", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
-        postRepository.save(new Post("Test4", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
-        postRepository.save(new Post("Test5", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
-        postRepository.save(new Post("Test6", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
-        postRepository.save(new Post("Test7", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS"));
+        postRepository.save(new Post("Test1", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", true));
+        postRepository.save(new Post("Test2", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", false));
+        postRepository.save(new Post("Test3", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", false));
+        postRepository.save(new Post("Test4", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", true));
+        postRepository.save(new Post("Test5", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", true));
+        postRepository.save(new Post("Test6", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", false));
+        postRepository.save(new Post("Test7", "DSAD SDA DAS DAS DAS D ASD ASD ASD AS DAS DAS DAS DAS DSA DAS D SAD ASD ASD AS", true));
     }
 }
